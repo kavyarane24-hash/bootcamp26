@@ -1,3 +1,6 @@
 Mentors - Kunj Vadhiya & Vraj Soni
 
-Mentees : Kanan Ruparelia
+Mentees : 
+Kavya Rane
+Khwaish Shah
+Kanan Ruparelia
