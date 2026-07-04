@@ -7,14 +7,25 @@ import Categories from "./categories";
 import SkinCare from "./skincare";
 import HairCare from "./haircare";
 import Perfume from "./perfumes";
+import CartDrawer from "./cartdrawer";
 
 export default function App() {
   const [page, setPage] = useState("home");
-  const [cartCount, setCartCount] = useState(0);
+
+  const [cart, setCart] = useState([]);
+
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
     <>
-      <Navbar setPage={setPage} cartCount={cartCount} />
+      <Navbar setPage={setPage} cart={cart} setIsCartOpen={setIsCartOpen} />
+
+      <CartDrawer
+        cart={cart}
+        setCart={setCart}
+        isCartOpen={isCartOpen}
+        setIsCartOpen={setIsCartOpen}
+      />
 
       {page === "home" && (
         <>
@@ -25,17 +36,11 @@ export default function App() {
         </>
       )}
 
-      {page === "skin" && (
-        <SkinCare cartCount={cartCount} setCartCount={setCartCount} />
-      )}
+      {page === "skin" && <SkinCare cart={cart} setCart={setCart} />}
 
-      {page === "hair" && (
-        <HairCare cartCount={cartCount} setCartCount={setCartCount} />
-      )}
+      {page === "hair" && <HairCare cart={cart} setCart={setCart} />}
 
-      {page === "perfume" && (
-        <Perfume cartCount={cartCount} setCartCount={setCartCount} />
-      )}
+      {page === "perfume" && <Perfume cart={cart} setCart={setCart} />}
     </>
   );
 }

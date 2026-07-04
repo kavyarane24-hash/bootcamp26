@@ -70,11 +70,12 @@ export default function Categories({ setPage }) {
               className="text-[#7A8F6A] text-6xl font-extrabold mb-10 tracking-[3px]"
               style={{ fontFamily: "'Cormorant Garamond',serif" }}
             >
-              Radiant Skin, Naturally
+              Silky Strength, Every Day
             </h1>
             <h2 className="text-[#7A8F6A] text-[31px] font-[350] mb-10 leading-13">
-              Thoughtfully crafted skincare enriched with botanical ingredients
-              to nourish, hydrate, and restore your natural glow.
+              Luxurious haircare enriched with nature's finest ingredients to
+              deeply nourish, repair, and leave your hair soft, healthy, and
+              full of life.
             </h2>
             <button
               className="border border-[#7A8F6A] text-[#7A8F6A] px-8 py-3 rounded-full text-2xl flex justify-center items-center translate-x-50 gap-2 cursor-pointer hover:bg-[#8BAA93] hover:text-white hover:gap-4 hover:shadow-2xl"
@@ -95,11 +96,12 @@ export default function Categories({ setPage }) {
               className="text-[#8A6FA8] text-6xl font-extrabold mb-10 tracking-[3px]"
               style={{ fontFamily: "'Cormorant Garamond',serif" }}
             >
-              Radiant Skin, Naturally
+              Signature Scents, Timeless Elegance
             </h1>
             <h2 className="text-[#5F5369] text-[31px] font-[350] mb-10 leading-13">
-              Thoughtfully crafted skincare enriched with botanical ingredients
-              to nourish, hydrate, and restore your natural glow.
+              Refined fragrances designed to complement every moment, combining
+              delicate florals, warm woods, and captivating notes into an
+              unforgettable experience.
             </h2>
             <button
               className="border border-[#8A6FA8] text-[#8A6FA8] px-8 py-3 rounded-full text-2xl flex justify-center items-center translate-x-50 gap-2 cursor-pointer hover:bg-[#9B89B8] hover:text-white hover:gap-4 hover:shadow-2xl"
