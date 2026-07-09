@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:10px 0;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+button.delete{
+    background:red;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+button.delete:hover{
+    background:darkred;
+}
